@@ -1,0 +1,70 @@
+VOCABULARY 11 PROJECT DEMONSTRATION
+
+
+
+WORDS:
+Try
+Catch
+Finally
+Error
+Compile time error
+Run time error
+Error correction code
+
+
+
+PASSWORD SAFE ALGORITHM OVERALL DESCRIPTION
+To demonstrate my knowledge of Vocabulary 11, I have created a Password Safe Algorithm.
+The program asks the user to create a safe with their desired key, to hold as many passwords and corresponding sites as they
+please. The program presents the user with a main menu, which offers three options: display passwords and sites, add
+passwords and sites, and change key.
+
+For option 1, the program asks for the key, and if the key is correct, the program displays the passwords and sites without
+any kind of "encryption" hiding the passwords. If the key is incorrect, then the program displays the sites
+and corresponding passwords with "encryption". "Encryption" on the passwords is displayed with the first two letters or digits
+of the password being visible, and the rest replaced with "*"'s. After displaying the sites and passwords, the program asks
+if the user wants to return to the main menu or continue with a different key. If the user continues, the program again asks
+for the key and depending on the correctness of the inputed key, the program displays the sites and either normal or
+"encrypted" passwords.
+
+For option 2, the program asks the user for the number of sites and passwords they want to input, and has them input each one.
+
+For option 3, the program first asks the user for the existing key. If the key is correct, the program congratulates the user
+and has the user input a new key. If the key is incorrect, the program tells the user it is incorrect and asks the user if
+they want to re-input the key, or return to the main menu.
+
+After one instance of main menu is run, the program has the user enter e to exit or m to see the main menu again.
+
+
+
+CONNECTION TO VOCABULARY 11:
+
+TRY: Try is demonstrated when the program asks the user to input the amount of passwords and sites they would like to add to
+the safe. The program expects an integer, but is prepared to be delivered with a different input thanks to the try and catch
+methods. The try creates a new Scanner, and receives user input, expecting the input to be a primitive integer type.
+
+CATCH: The catch part of java is demonstrated when the program asks the user to input the amount of passwords and sites they
+would like to add to the safe. If the try's Scanner does not receive an integer, the catch cites an Input Mismatch Exception,
+informing the user that their input was not a number. Because of the creation of a Scanner in try, and the while loop only
+terminating when the input is an integer greater than 0, the program asks the user for the integer again, until it receives
+an integer with the aforementioned requirements.
+
+FINALLY: Finally doesn't have a strong use case in this scenario, but is still used to reinforce to the user that the program
+is running, both when the catch is used and the catch isn't used. It only runs when try is run.
+
+ERROR: Multiple errors are found throughout the code, most highlighted through the comments and some caught through error
+correction code. One of these errors highlighted is a logical flaw, that the code asks the user to input a 4 - 8 digit key,
+but never checks if the inputed key is 4 - 8 digits, allowing it to range anywhere from null to ∞. Also, if the user enters
+a string in this same situation, the error of "Input Mismatch Exception" is produced.
+
+COMPILE TIME ERROR: A compile time syntax error is provided in the main file, at the bottom, right before the print methods.
+The last bracket of the choiceThree() method is commented out, ruining the syntax of the program and preventing it from
+running
+
+RUN TIME ERROR: A few different runtime errors are present in the program. First, at the very beginning there is a logical
+flaw present. The program asks the user to input a 4 - 8 digit key, but never checks if the inputed key is 4 - 8 digits,
+allowing it to range anywhere from null to ∞.  Another error present is when the user tries to enter a string into the key,
+where the program breaks, citing an "Input Mismatch Error".
+
+ERROR CORRECTION CODE: Error correction code is provided when the try, catch, and finally is implemented when the program
+asks the user their desired number of both initial and later passwords and sites.
