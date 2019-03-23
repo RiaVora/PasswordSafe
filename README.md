@@ -1,5 +1,5 @@
 # PasswordSafe
-PURPOSE: The purpose of the PasswordSage is to demonstrate my knowledge of Vocabulary 11: Try, Catch, Finally, Error Compile, Time Error, Run time Error, Error Correction Code. The program asks the user to create a safe with their desired key, to hold as many passwords and corresponding sites as they please. The program presents the user with a main menu, which offers three options: display passwords and sites, add passwords and sites, and change key.
+PURPOSE: The purpose of the PasswordSafe is to demonstrate my knowledge of Vocabulary 11: Try, Catch, Finally, Error Compile, Time Error, Run time Error, Error Correction Code. The program asks the user to create a safe with their desired key, to hold as many passwords and corresponding sites as they please. The program presents the user with a main menu, which offers three options: display passwords and sites, add passwords and sites, and change key.
 
 WORDS:
 Try
